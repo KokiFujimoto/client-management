@@ -21,8 +21,24 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index()
+    public function viewHome()
     {
         return view('home');
+    }
+
+    /**
+     * 新規登録画面遷移
+     */
+    public function viewStore() {
+
+        return view('store');
+    }
+
+    /**
+     * 詳細画面遷移
+     */
+    public function viewDetail() {
+
+        return view('detail');
     }
 }
