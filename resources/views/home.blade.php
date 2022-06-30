@@ -5,12 +5,12 @@
 @section('content')
 
 <section class="store mb-5">
-    <a href="" class="store">新規登録</a>
+    <a href="{{ route('viewStore') }}" class="store">新規登録</a>
 </section>
 
 <section class="clients">
     <h4 class="clients-all">顧客一覧</h4>
-    <a href="" class="client-link">
+    <a href="{{ route('viewDetail') }}" class="client-link">
         <ul class="clients-list d-flex">
             <li class="client-id">ID</li>
             <li class="client-name">名前</li>
