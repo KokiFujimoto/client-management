@@ -1,3 +1,5 @@
+/* ホーム画面のスタイルシート */
+
 section.store.mb-5 {
     width: 1080px;
     margin: auto;
@@ -33,3 +35,37 @@ li.client-name {
 li.client-kana {
     margin: auto;
 }
+
+
+/* 登録画面のスタイルシート */
+
+section.client-store {
+    width: 720px;
+    margin: auto;
+}
+
+h4.store.mb-5 {
+    text-align: center;
+}
+
+input.form-control.mb-3.name {width: 60%;}
+
+input.form-control.mb-3.kana {
+    width: 60%;
+}
+
+input.form-control.mb-3.tel {
+    width: 60%;
+}
+
+button.btn.btn-primary.form-control {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.button-wrapped {
+    display: flex;
+}
+
+
+/* 詳細画面のスタイルシート */
