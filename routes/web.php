@@ -19,4 +19,8 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'viewHome'])->name('viewHome');
+Route::get('/home/store', [\App\Http\Controllers\HomeController::class, 'viewStore'])->name('viewStore');
+Route::get('/home/detail', [App\Http\Controllers\HomeController::class, 'viewDetail'])->name('viewDetail');
+
+Route::post('/home/store', [App\Http\Controllers\ClientController::class, 'store'])->name('store');
