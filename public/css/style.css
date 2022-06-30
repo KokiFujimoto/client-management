@@ -1,0 +1,35 @@
+section.store.mb-5 {
+    width: 1080px;
+    margin: auto;
+}
+
+a.store {float: right;}
+
+section.clients {
+    width: 1080px;
+    margin: auto;
+}
+
+h4.clients-all {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+ul.clients-list.d-flex {
+    text-align: left;
+    list-style: none;
+}
+
+a.client-link {
+    color: black;
+}
+
+li.client-id {margin: auto;}
+
+li.client-name {
+    margin: auto;
+}
+
+li.client-kana {
+    margin: auto;
+}
