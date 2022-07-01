@@ -1,0 +1,92 @@
+/* ホーム画面のスタイルシート */
+
+section.store.mb-5 {
+    width: 1080px;
+    margin: auto;
+}
+
+a.store {float: right;}
+
+section.clients {
+    width: 1080px;
+    margin: auto;
+}
+
+h4.clients-all {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+p.no-data {
+    text-align: center;
+}
+
+ul.clients-list.d-flex {
+    margin: auto;
+    max-width: max-content;
+    list-style: none;
+}
+
+a.client-link {
+    color: black;
+}
+
+li.client-id {
+    width: 100px;
+    padding-left: 1em;
+    text-indent: -1em;
+    margin-left: 50px;
+}
+
+li.client-name {
+    width: 250px;
+    padding-left: 1em;
+    text-indent: -1em;
+}
+
+li.client-kana {
+    width: 250px;
+    padding-left: 1em;
+    text-indent: -1em;
+}
+
+
+/* 登録画面のスタイルシート */
+
+section.client-store {
+    width: 720px;
+    margin: auto;
+}
+
+h4.store.mb-5 {
+    text-align: center;
+}
+
+input.form-control.mb-3.name {
+    width: 60%;
+}
+
+input.form-control.mb-3.kana {
+    width: 60%;
+}
+
+input.form-control.mb-3.tel {
+    width: 60%;
+}
+
+button.btn.btn-primary.form-control {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.button-wrapped {
+    display: flex;
+}
+
+
+/* 詳細画面のスタイルシート */
+
+button.btn.btn-danger.form-control {
+    width: 40%;
+    margin: 0 auto;
+}
