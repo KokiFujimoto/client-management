@@ -14,7 +14,7 @@
         <p class="no-data">顧客データはありません</p>
     @else
         @foreach ($clients as $client)
-            <div class="client-one-data">
+            <div class="client-one-data mb-3">
                 <a href="{{ route('viewDetail', ['id' => $client->id]) }}" class="client-link">
                     <ul class="clients-list d-flex">
                         <li class="client-id">ID:{{ $client->id }}</li>

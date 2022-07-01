@@ -22,7 +22,7 @@
             @csrf
             @method('DELETE')
             <div class="button-wrapped">
-                <button class="btn btn-danger form-control">削除</button>
+                <button class="btn btn-danger form-control" onclick="deleteAlert(event); return false;">削除</button>
             </div>
         </form>
     </div>
