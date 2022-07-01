@@ -18,7 +18,7 @@ class CreateClientsTable extends Migration
             $table->string('name', '255');
             $table->string('kana', '255');
             $table->string('tel', '15');
-            $table->string('info');
+            $table->string('info', '511');
             $table->timestamps();
         });
     }
