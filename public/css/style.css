@@ -17,6 +17,10 @@ h4.clients-all {
     margin-bottom: 50px;
 }
 
+p.no-data {
+    text-align: center;
+}
+
 ul.clients-list.d-flex {
     text-align: left;
     list-style: none;
@@ -69,3 +73,8 @@ button.btn.btn-primary.form-control {
 
 
 /* 詳細画面のスタイルシート */
+
+button.btn.btn-danger.form-control {
+    width: 40%;
+    margin: 0 auto;
+}

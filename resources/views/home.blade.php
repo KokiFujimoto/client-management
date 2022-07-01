@@ -10,13 +10,21 @@
 
 <section class="clients">
     <h4 class="clients-all">顧客一覧</h4>
-    <a href="{{ route('viewDetail') }}" class="client-link">
-        <ul class="clients-list d-flex">
-            <li class="client-id">ID</li>
-            <li class="client-name">名前</li>
-            <li class="client-kana">フリガナ</li>
-        </ul>
-    </a>
+    @if (empty($clients))
+        <p class="no-data">顧客データはありません</p>
+    @else
+        @foreach ($clients as $client)
+            <div class="client-one-data">
+                <a href="{{ route('viewDetail', ['id' => $client->id]) }}" class="client-link">
+                    <ul class="clients-list d-flex">
+                        <li class="client-id">ID:{{ $client->id }}</li>
+                        <li class="client-name">{{ $client->name }}</li>
+                        <li class="client-kana">{{ $client->kana }}</li>
+                    </ul>
+                </a>
+            </div>
+        @endforeach
+    @endif
 </section>
 
 @endsection
