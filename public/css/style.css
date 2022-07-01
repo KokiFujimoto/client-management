@@ -22,7 +22,8 @@ p.no-data {
 }
 
 ul.clients-list.d-flex {
-    text-align: left;
+    margin: auto;
+    max-width: max-content;
     list-style: none;
 }
 
@@ -30,14 +31,23 @@ a.client-link {
     color: black;
 }
 
-li.client-id {margin: auto;}
+li.client-id {
+    width: 100px;
+    padding-left: 1em;
+    text-indent: -1em;
+    margin-left: 50px;
+}
 
 li.client-name {
-    margin: auto;
+    width: 250px;
+    padding-left: 1em;
+    text-indent: -1em;
 }
 
 li.client-kana {
-    margin: auto;
+    width: 250px;
+    padding-left: 1em;
+    text-indent: -1em;
 }
 
 
@@ -52,7 +62,9 @@ h4.store.mb-5 {
     text-align: center;
 }
 
-input.form-control.mb-3.name {width: 60%;}
+input.form-control.mb-3.name {
+    width: 60%;
+}
 
 input.form-control.mb-3.kana {
     width: 60%;
