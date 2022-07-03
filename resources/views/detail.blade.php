@@ -10,12 +10,12 @@
         <form action="{{ route('update', ['id' => $client->id]) }}" method="POST" class="client mb-3">
             @csrf
             @method('PATCH')
-            <input type="text" class="form-control mb-3 name" name="name" value="{{ $client->name }}">
-            <input type="text" class="form-control mb-3 kana" name="kana" value="{{ $client->kana }}">
-            <input type="text" class="form-control mb-3 tel" name="tel" value="{{ $client->tel }}">
-            <textarea name="info" id="" cols="30" rows="10" class="form-control mb-3 info">{{ $client->info }}</textarea>
+            <input type="text" id="inputName" class="form-control mb-3 name" name="name" value="{{ $client->name }}" data-maxlength="255">
+            <input type="text" id="inputKana" class="form-control mb-3 kana" name="kana" value="{{ $client->kana }}" data-maxlength="255">
+            <input type="tel" id="inputTel" class="form-control mb-3 tel" name="tel" value="{{ $client->tel }}" data-maxlength="11">
+            <textarea name="info" id="inputInfo" cols="30" rows="10" class="form-control mb-3 info" data-maxlength="511">{{ $client->info }}</textarea>
             <div class="button-wrapped">
-                <button class="btn btn-primary form-control" onclick="updateMessage();">保存</button>
+                <button class="btn btn-primary form-control" onclick="updateMessage(); return false;">保存</button>
             </div>
         </form>
         <form action="{{ route('delete', ['id' => $client->id]) }}" method="POST" class="client">
