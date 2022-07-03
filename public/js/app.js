@@ -1208,14 +1208,27 @@ module.exports = JSON.parse('{"_from":"axios@^0.21","_id":"axios@0.21.4","_inBun
 ;
 
 
+// 保存メッセージ
+document.getElementById('store-button').onclick = function() {
+
+  alert('保存しました');
+
+}
 
 // 削除確認アラート
-function deleteAlert(e) {
-
-  if(!window.confirm('本当に削除しますか？')) {
-      window.alert('キャンセルされました');
-      return false;
-  }
+document.getElementById('delete-button').onclick = function() {
   
-  document.deleteform.submit();
+  if (!window.confirm('本当に削除しますか？')) {
+    alert('キャンセルされました');
+    return false;
+  }
 }
+// function deleteAlert(e) {
+
+//   if(!window.confirm('本当に削除しますか？')) {
+//       window.alert('キャンセルされました');
+//       return false;
+//   }
+  
+//   document.deleteform.submit();
+// }
