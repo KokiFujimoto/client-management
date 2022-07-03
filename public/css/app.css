@@ -4555,8 +4555,10 @@ textarea.form-control-lg {
 
 .pagination {
   display: flex;
-  padding-left: 0;
   list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-left: 350px;
 }
 
 .page-link {

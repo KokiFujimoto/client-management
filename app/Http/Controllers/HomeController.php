@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Client;
 use App\Models\User;
+use Illuminate\Pagination\Paginator;
 
 class HomeController extends Controller
 {
@@ -26,7 +27,7 @@ class HomeController extends Controller
     public function viewHome()
     {
         // 顧客情報を取得
-        $clients = Client::oldest()->get();
+        $clients = Client::oldest()->paginate(35);
 
         if (count($clients) <= 0) {
             $clients = '';
