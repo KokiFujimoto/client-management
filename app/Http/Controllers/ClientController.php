@@ -20,6 +20,7 @@ class ClientController extends Controller
             'name' => 'string|max:255|required',
             'kana' => 'string|max:255|regex:/^[ア-ン゛゜ァ-ォャ-ョー]+$/u|required',
             'tel'  => 'digits_between:10,11',
+            'info' => 'string|max:511|required',
         ]);
 
         // フォームの内容を登録
@@ -48,6 +49,7 @@ class ClientController extends Controller
             'name' => 'string|max:255|required',
             'kana' => 'string|max:255|regex:/^[ア-ン゛゜ァ-ォャ-ョー]+$/u|required',
             'tel'  => 'digits_between:10,11',
+            'info' => 'string|max:511|required',
         ]);
 
         // 更新対象を呼び出し

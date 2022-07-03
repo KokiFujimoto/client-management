@@ -62,12 +62,22 @@ h4.store.mb-5 {
     text-align: center;
 }
 
+
 input.form-control.mb-3.name {
     width: 60%;
 }
 
 input.form-control.mb-3.kana {
     width: 60%;
+}
+
+.phone-list {
+    display: flex;
+    width: 60%;
+}
+
+p.phone- {
+    margin-top: 8px;
 }
 
 input.form-control.mb-3.tel {

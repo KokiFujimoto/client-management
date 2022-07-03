@@ -25,6 +25,9 @@
             </div>
         @endforeach
     @endif
+    @if (!empty($clients))
+        {{ $clients->links('pagination::bootstrap-4') }}
+    @endif
 </section>
 
 @endsection
