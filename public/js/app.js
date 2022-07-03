@@ -1206,20 +1206,3 @@ module.exports = JSON.parse('{"_from":"axios@^0.21","_id":"axios@0.21.4","_inBun
 /******/ 	
 /******/ })()
 ;
-
-
-// 保存メッセージ
-document.getElementById('store-button').onclick = function() {
-
-  alert('保存しました');
-
-}
-
-// 削除確認アラート
-document.getElementById('delete-button').onclick = function() {
-  
-  if (!window.confirm('本当に削除しますか？')) {
-    alert('キャンセルされました');
-    return false;
-  }
-}

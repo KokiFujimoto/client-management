@@ -10,6 +10,7 @@
     <title>顧客管理機能 | @yield('title')</title>
 
     <!-- Scripts -->
+    <script src="{{ asset('/js/script.js') }}" defer></script>
     <script src="{{ asset('js/app.js') }}" defer></script>
 
     <!-- Fonts -->

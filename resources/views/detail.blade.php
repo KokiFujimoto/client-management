@@ -15,14 +15,14 @@
             <input type="text" class="form-control mb-3 tel" name="tel" value="{{ $client->tel }}">
             <textarea name="info" id="" cols="30" rows="10" class="form-control mb-3 info">{{ $client->info }}</textarea>
             <div class="button-wrapped">
-                <button class="btn btn-primary form-control" id="store-button">保存</button>
+                <button class="btn btn-primary form-control" onclick="updateMessage();">保存</button>
             </div>
         </form>
         <form action="{{ route('delete', ['id' => $client->id]) }}" method="POST" class="client">
             @csrf
             @method('DELETE')
             <div class="button-wrapped">
-                <button class="btn btn-danger form-control" id="delete-button">削除</button>
+                <button class="btn btn-danger form-control" onclick="deleteConfirm(); return false;">削除</button>
             </div>
         </form>
     </div>
