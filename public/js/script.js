@@ -69,9 +69,10 @@ function storeMessage() {
     if(message.length > 0) {
         window.alert(message);
         return false;
-    } else {
-        window.alert('保存しました');
     }
+    document.update.submit();
+    window.alert('保存しました');
+    
   }
 
   // 削除確認アラート
@@ -80,5 +81,5 @@ function storeMessage() {
         window.alert('キャンセルされました'); 
         return false;
     }
-    document.deleteform.submit();
-  };
+    document.delete.submit();
+  }

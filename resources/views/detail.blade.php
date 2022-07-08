@@ -7,7 +7,7 @@
 <section class="client-store">
     <h4 class="store mb-5">顧客データ詳細 ID:{{ $client->id }}</h4>
     <div class="form-group">
-        <form action="{{ route('update', ['id' => $client->id]) }}" method="POST" class="client mb-3">
+        <form action="{{ route('update', ['id' => $client->id]) }}" method="POST" class="client mb-3" name="update">
             @csrf
             @method('PATCH')
             <input type="text" id="inputName" class="form-control mb-3 name" name="name" value="{{ $client->name }}" data-maxlength="255">
@@ -18,7 +18,7 @@
                 <button class="btn btn-primary form-control" onclick="updateMessage(); return false;">保存</button>
             </div>
         </form>
-        <form action="{{ route('delete', ['id' => $client->id]) }}" method="POST" class="client">
+        <form action="{{ route('delete', ['id' => $client->id]) }}" method="POST" class="client" name="delete">
             @csrf
             @method('DELETE')
             <div class="button-wrapped">

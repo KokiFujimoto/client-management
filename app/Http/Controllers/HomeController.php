@@ -29,8 +29,6 @@ class HomeController extends Controller
         // 顧客情報を取得
         $clients = Client::oldest()->paginate(35);
 
-        dd($clients);
-
         if (count($clients) <= 0) {
             $clients = '';
         }
